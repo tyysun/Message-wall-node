@@ -1,0 +1,113 @@
+.note{
+  position: absolute;
+  color: #333;
+  width: 220px;
+  margin: 20px 10px;
+  transition: all 1s;
+  
+ 
+  .note-head{
+    height: 20px;
+    background-color: #ea9b35;
+    cursor: move;
+    font-size: 12px;
+    line-height: 20px;
+    padding-left: 10px;
+    color: #666;
+
+    &:hover .delete{
+      opacity: 1;
+    }
+
+    // &:before{
+    //   position: absolute;
+    //   left: 50%;
+    //   top: -11px;
+    //   margin-left: -32px;
+    //   content: ' ';
+    //   display: block;
+    //   width: 64px;
+    //   height: 18px;
+    //   background: #35bba3;
+    // }
+
+    // &:after {
+    //   position: absolute;
+    //   left: 50%;
+    //   margin-left: 32px;
+    //   top: -11px;
+    //   z-index: -1;
+    //   content: '';
+    //   display: block;
+    //   width: 0;
+    //   height: 0;
+    //   border-left: 5px solid #299683;
+    //   border-top: 18px solid transparent;
+    // }
+  }
+
+  .note-ct{
+    padding: 10px;
+    background-color: #efb04e;
+    outline: none;
+  }
+
+  .delete {
+    position: absolute;
+    top: 1px;
+    right: 6px;
+    font-size: 19px;
+    color: #fff;
+    cursor: pointer;
+    // opacity: 0;
+    // transition: opacity 1s;
+  }
+
+}
+
+
+.draggable{
+  opacity: 0.8;
+  cursor:move;
+  transition: none;
+}
+.note,
+.note1,
+.note2 {
+  /* Styles to distinguish sheets from one another */
+  box-shadow: 2px 3px 6px rgba(0,0,0,0.7);
+  // border: 1px solid #bbb;
+  // background-color: #ea9b35;
+}
+
+.note1,
+.note2 {
+  
+  position: absolute;
+  height: 95%;
+  width: 95%;
+ 
+}
+
+.note1 {
+  right: 8px;
+  top: -2;
+  transform: rotate(-4deg);
+  z-index: -2;
+}
+
+.note2 {
+  top: 5px;
+  right: -5px;
+  transform: rotate(2deg);
+  z-index: -1;
+}
+
+.note svg.icon{
+  position: absolute;
+  top: -8px;
+  left: 100px;
+  font-size: 23px
+}
+
+

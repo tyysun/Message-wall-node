@@ -1,0 +1,36 @@
+{
+  "name": "note-express",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "PORT=5000 node ./bin/www",
+    "webpack": "webpack --config=src/webpack.config.js",
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "watch": "onchange \"src/**/*js\" \"src/**/*.less\" -- npm run webpack"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.3",
+    "css-loader": "^0.28.11",
+    "debug": "~2.6.9",
+    "ejs": "~2.5.7",
+    "express": "~4.16.0",
+    "express-session": "^1.15.6",
+    "http-errors": "~1.6.2",
+    "less": "^3.0.4",
+    "less-loader": "^4.1.0",
+    "morgan": "~1.9.0",
+    "passport": "^0.4.0",
+    "passport-github": "^1.1.0",
+    "sequelize": "^4.37.10",
+    "sqlite3": "^4.0.0",
+    "style-loader": "^0.21.0"
+  },
+  "devDependencies": {
+    "file-loader": "^1.1.11",
+    "onchange": "^4.0.0",
+    "svg-url-loader": "^2.3.2",
+    "webpack": "^4.9.1",
+    "webpack-cli": "^2.1.4"
+  }
+}
