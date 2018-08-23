@@ -1,4 +1,4 @@
-# Message-wall-node留言墙
+# 墨痕留言墙
 
 一个在线留言墙
 ![](https://upload-images.jianshu.io/upload_images/3429455-918f418e5f18dcd0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
